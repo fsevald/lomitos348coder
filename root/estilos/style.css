@@ -1,0 +1,725 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*VISTA INICIAL: BREAK POINT hasta 320px de ancho */
+
+
+
+    .bodyIndex{
+        background-image: url("../img/mosaico348.png");
+        background-repeat: repeat;
+
+        display: grid;
+        grid-template-areas:
+        "banner"
+        "navmenu"
+        "foto"
+        "texto"
+        "titulo"
+        "info"
+        "pie";
+        
+        grid-template-rows: auto;
+        
+    }
+
+
+
+    .bodyProductos{
+        background-image: url("../img/mosaico348.png");
+        background-repeat: repeat;
+
+        display: grid;
+        grid-template-areas:
+        "banner"
+        "navmenu"
+        "titulo"
+        "producto"
+        "producto2"
+        "pie";
+        
+        grid-template-rows: auto;
+
+
+        
+        
+    }
+
+
+
+    header{
+        grid-area: banner;
+        background-color: #BA3A32;
+        text-align: center;
+        padding-bottom: 10px;
+        
+    }
+
+
+    nav{
+
+        grid-area: navmenu;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        background-color:#aa2f27;
+        padding-top: 5pt;
+        padding-bottom: 5pt;
+        
+    }
+
+
+    .divFoto{
+
+        grid-area: foto;
+        /*background-color: rgba(65, 212, 175, 0.425);*/
+
+        display: grid;
+        justify-items: center;
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        
+    }
+
+
+
+
+    .divTexto{
+
+        grid-area: texto;
+        /*background-color: rgba(153, 151, 27, 0.363);*/
+
+        display: flex;
+        flex-direction: column;
+
+        text-align: left;
+
+        padding-bottom: 1rem;
+
+    }
+
+    
+
+
+    .divTitulo{
+
+        background-color:#BA3A32;
+        width: 100%;
+        
+        grid-area: titulo;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+    }
+
+
+    
+
+    .divInfo{
+
+        /*background-color: rgba(177, 141, 24, 0.521);*/
+        
+        justify-self: center;
+        grid-area: info;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
+
+    .div_divDatos{
+
+        /*background-color: cadetblue;*/
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        
+        padding-bottom: 1rem;
+        
+    }
+
+
+
+    footer{
+        grid-area: pie;
+        background-color:#BA3A32;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: azure;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+
+        
+    }
+
+
+
+
+    /*Especificos PRODUCTOS*/
+
+    .divTituloProductos{
+
+        width: 100%;
+        
+        grid-area: titulo;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+    }
+
+
+    .divProductos{
+
+        grid-area: producto producto1;
+        /*background-color: rgba(65, 212, 175, 0.425);*/
+        
+        display: grid;
+        justify-items: center;
+
+        padding-bottom: 1rem;
+        
+    }
+
+
+    .divProductosItem{
+
+        /*background-color: deeppink;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 1rem 1rem 1rem 1rem;
+
+    }
+
+
+    .pNombreProductos{
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14pt;
+        text-align: center;
+        color: #BA3A32;
+
+        padding-top: 1rem;
+
+    }
+    
+    .pInfoProductos{
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 11pt;
+        text-align: center;
+
+    }
+
+
+    .pDivisor{
+
+        font-size: 14pt;
+        padding-top: 1rem;
+    }
+
+
+    .imgProducto{
+
+        width: 90%;
+        border-radius: 10px;
+        border-color: rgb(129, 111, 71);
+        border-style: solid;
+    
+    }
+
+
+
+
+    /*ELEMENTOS HEADER y NAV*/
+
+    .logo{
+        width: 180px;
+    }
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    li{
+
+        padding-top: 2px;
+        padding-bottom: 2px;
+
+    }
+
+    a{
+        color: azure;
+        text-decoration: none;
+    }
+
+
+
+    /*ELEMENTOS CUERPO*/
+
+    .pTextIndex{
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14pt;
+        padding-left: 1rem;
+        padding-top: 3%;
+
+    }
+
+
+    h1{
+        font-family: 'DM Serif Text', serif;
+        font-size: 24pt;
+        color:black;
+        padding-left: 1rem;
+
+    }
+
+
+    h2{
+        font-family: 'DM Serif Text', serif;
+        font-size: 14pt;
+        color: whitesmoke;
+
+    }
+
+
+    h3{
+        font-family: 'DM Serif Text', serif;
+        font-size: 16pt;
+        color:whitesmoke;
+        text-align: center;
+
+    }
+
+
+    .h3Black{
+        font-family: 'DM Serif Text', serif;
+        font-size: 16pt;
+        color:black;
+        text-align: center;
+
+    }
+
+
+
+    .pInfo{
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 11pt;
+        padding-top: 8pt;
+
+    }
+
+
+    .imgIndex{
+
+        width: 90%;
+        border-radius: 15px;
+        
+    }
+
+
+    span{
+        color: #ba3b32;
+    }
+
+
+    .ico{
+        height: 60%;
+    }
+
+
+
+    /*ELEMENTOS FOOTER*/
+
+    .ulFooter{
+    list-style-type: none;
+    margin-top: 5px;
+
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    }
+
+    .liFooter{
+    color:#5c1c18;
+    display: inline-block;
+    width: 50px;
+    position: relative;
+
+    }
+
+    .aFooter{
+    color:#5c1c18;
+    text-decoration: none;
+    font-size: small;
+
+    }
+
+
+
+/*VISTA MOBILE BREAK POINT hasta 480px de ancho */
+
+
+@media only screen and (min-width: 321px) and (max-width: 480px){
+
+
+    .pInfo{
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12pt;
+        padding-top: 8pt;
+    }
+
+    span{
+        color: #BA3A32;
+    }
+
+
+    h3{
+        font-size: 18pt;
+        
+    }
+
+
+    .h3Black{
+        font-size: 18pt;
+        
+    }
+
+
+
+}
+
+
+
+/*VISTA MOBILE BREAK POINT hasta 768px de ancho */
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+
+    .logo{
+        width: 250px;
+    }
+
+
+    nav{
+        grid-area: navmenu;
+        padding-top: 10px;
+        padding-bottom: 10px;  
+        
+    }
+
+
+    ul{
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+
+    li{
+        display: inline-block;
+    }
+
+
+    .divTexto{
+
+        grid-area: texto;
+        text-align: left;
+
+    }
+
+
+    h1{
+        
+        font-size: 30pt;
+        text-align: center;
+        padding-left: 0rem;
+        
+    }
+
+
+    .pTextIndex{
+
+        font-size: 14pt;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        
+    }
+
+
+    h3{
+        font-size: 24pt;
+    }
+
+    .h3Black{
+        font-size: 24pt;
+    }
+
+
+
+    .divInfo{
+
+        /*background-color: rgba(177, 24, 57, 0.521);*/
+        width: 100%;
+        
+        justify-self: center;
+        grid-area: info;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 1rem;
+        
+    }
+
+    
+    .pInfo{
+        font-size: 13pt; 
+    }
+
+
+    .ico{
+        height: 80%;
+    }
+
+    span{
+        color: #BA3A32;
+    }
+
+}
+
+
+/*VISTA BREAK POINT DESDE 769 EN ADELANTE*/
+
+@media only screen and (min-width: 769px){
+
+
+    .bodyIndex{
+        
+        display: grid;
+        grid-template-areas:
+        "banner banner"
+        "navmenu navmenu"
+        "texto foto"
+        "titulo titulo"
+        "info info"
+        "pie pie";
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto auto auto auto;
+        
+    }
+
+
+    .divProductos{
+
+        grid-area: producto producto1;
+        /*background-color: rgba(65, 212, 175, 0.87);*/
+
+        grid-template-columns: 50% 50%;
+        
+        display: grid;
+        justify-items: center;
+        
+        padding-bottom: 1rem;
+           
+    }
+
+
+    .divProductosItem{
+
+        /*background-color: rgb(255, 239, 20);*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 1rem 1rem 1rem 1rem;
+
+    }
+
+    .imgProducto{
+
+        width: 70%;
+        border-radius: 10px;
+    
+    }
+
+
+    .logo{
+        width: 250px;
+    }
+
+
+    h2{
+        font-size: 24pt; 
+    }
+
+    
+
+    nav{
+        grid-area: navmenu;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        background-color:#aa2f27;
+        padding-top: 10px;
+        padding-bottom: 10px;  
+        
+    }
+
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+
+    li{
+        display: inline-block;
+        width: 150px;
+        position: relative;
+    }
+
+
+
+    .divTexto{
+
+        grid-area: texto;
+        width: 80%;
+
+        justify-self: end;
+        
+        padding-top: 2rem;
+        padding-bottom: 0%;
+        padding-right: 1rem;
+        text-align: right;
+
+    }
+
+
+    h1{
+        font-family: 'DM Serif Text', serif;
+        font-size: 32pt;
+        color:black;
+        padding-left: 2rem;
+
+    }
+
+   .divFoto{
+
+        grid-area: foto;
+        width: 85%;
+
+        justify-items: start;
+        
+        padding-top: 2rem;
+        padding-bottom: 0%;
+        padding-left: 1rem;
+        
+    }
+
+    
+
+    .imgIndex{
+
+        width: 80%;
+        border-radius: 15px;
+        
+    }
+
+
+    .divTitulo{
+        
+        padding-top: 2rem;
+        background-color: rgba(177, 24, 113, 0);
+        
+    }
+
+
+    h3{
+        
+        font-size: 24pt;
+        color:black;
+    }
+
+
+    .h3Black{
+        
+        font-size: 24pt;
+        color:black;
+    }
+
+
+    .divInfo{
+
+        width: 100%;
+        justify-self: center;
+        grid-area: info;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+    }
+
+
+    .div_divDatos{
+
+        /*background-color: cadetblue;*/
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+
+    span{
+        color: #BA3A32;
+    }
+
+
+    .pInfo{
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14pt;
+        padding-top: 8pt;
+
+    }
+
+}
+
+
+
